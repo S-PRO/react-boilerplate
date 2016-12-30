@@ -1,0 +1,58 @@
+/* Color definitions
+** Use this service to retrieve color names:
+** http://www.color-blindness.com/color-name-hue
+*/
+:root {
+	/* colors */
+	--color-white: #FFFFFF;
+	--color-black: #000000;
+	--color-red-brick: #AA2F23;
+	--color-green-dark: #022231;
+	--color-orange-dark: #FDB00A;
+	--color-orange: #FDB00A;
+	--color-brown-maroon: #591200;
+	--color-brown-wheat: #F6E1BA;
+	--color-brown-chocolate: #D5721B;
+	--color-brown-dough: #C4B18F;
+	--color-blue: #85aaea;
+	--color-green: #71edc1;
+
+	/* base colors */
+	--color-header: var(--color-green);
+	--color-header-shadow: var(--color-green-dark);
+	--color-menu: var(--color-brown-wheat);
+	--color-menu-shadow: var(--color-brown-dough);
+	--color-menu-active: var(--color-orange-dark);
+	--color-menu-active-shadow: var(--color-brown-chocolate);
+	--color-language: var(--color-orange-dark);
+	--color-link: var(--color-brown-maroon);
+	--color-footer-text: var(--color-brown-wheat);
+	--color-footer-link: var(--color-orange);
+	--color-footer: var(--color-blue);
+
+	/* font */
+	--font-size-base: 100%;
+
+	/* length font */
+	--letters-cyrillic:
+		u+0400-045f,
+		u+0490-0491,
+		u+04b0-04b1,
+		u+2116;
+
+	--letters-latin:
+		u+0000-00ff,
+		u+0131,
+		u+0152-0153,
+		u+02c6,
+		u+02da,
+		u+02dc,
+		u+2000-206f,
+		u+2074,
+		u+20ac,
+		u+2212,
+		u+2215,
+		u+e0ff,
+		u+effd,
+		u+f000;
+}

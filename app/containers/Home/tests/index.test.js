@@ -1,10 +1,10 @@
-// import { App } from '../index';
+// import { Home } from '../index';
 
 import expect from 'expect';
 // import { shallow } from 'enzyme';
 // import React from 'react';
 
-describe('<App />', () => {
+describe('<Home />', () => {
   it('Expect to have unit tests specified', () => {
     expect(true).toEqual(false);
   });
