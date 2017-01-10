@@ -11,10 +11,8 @@ import styles from './style.css';
 import LoadingIndicator from 'components/LoadingIndicator';
 import List from 'components/List';
 import ListItem from 'components/ListItem';
-import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import messages from './messages';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { selectUsername } from './selectors';
@@ -51,22 +49,19 @@ export class Home extends React.PureComponent { // eslint-disable-line react/pre
         <div className={styles.wrapper}>
           <section>
             <h2>
-              <FormattedMessage {...messages.startProjectHeader} />
+              one
             </h2>
             <p>
-              <FormattedMessage {...messages.startProjectMessage} />
+              two
             </p>
           </section>
           <section>
             <h2>
-              <FormattedMessage {...messages.trymeHeader} />
+              three
             </h2>
             <form onSubmit={this.props.onSubmitForm}>
               <label htmlFor="username">
-                <FormattedMessage {...messages.trymeMessage} />
-
-                <FormattedMessage {...messages.trymeAtPrefix} />
-
+                all
                 <input id="username" type="text" placeholder="mxstbr" value={this.props.username} onChange={this.props.onChangeUsername} />
               </label>
             </form>
