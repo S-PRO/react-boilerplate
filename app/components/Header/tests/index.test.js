@@ -1,14 +1,11 @@
-import expect from 'expect';
-import { shallow } from 'enzyme';
-import React from 'react';
+// import Header from '../index';
 
-import Header from '../index';
+import expect from 'expect';
+// import { shallow } from 'enzyme';
+// import React from 'react';
 
 describe('<Header />', () => {
-  it('should render a div', () => {
-    const renderedComponent = shallow(
-      <Header />
-    );
-    expect(renderedComponent.find('div').length).toEqual(1);
+  it('Expect to have unit tests specified', () => {
+    expect(true).toEqual(false);
   });
 });

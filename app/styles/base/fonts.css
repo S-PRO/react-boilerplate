@@ -1,0 +1,77 @@
+/* cyrillic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local('Roboto Regular'),
+		local('Roboto-Regular'),
+		url('../../../static/fonts/roboto-light-cyrillic.woff2') format('woff2'),
+		url('../../../static/fonts/roboto-light.woff') format('woff');
+	unicode-range: var(--letters-cyrillic);
+}
+
+/* latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local('Roboto Regular'),
+		local('Roboto-Regular'),
+		url('../../../static/fonts/roboto-light-latin.woff2') format('woff2'),
+		url('../../../static/fonts/roboto-light.woff') format('woff');
+	unicode-range: var(--letters-latin);
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Roboto Regular'),
+		local('Roboto-Regular'),
+		url('../../../static/fonts/roboto-regular-cyrillic.woff2') format('woff2'),
+		url('../../../static/fonts/roboto-regular.woff') format('woff');
+	unicode-range: var(--letters-cyrillic);
+}
+
+/* latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Roboto Regular'),
+		local('Roboto-Regular'),
+		url('../../../static/fonts/roboto-regular-latin.woff2') format('woff2'),
+		url('../../../static/fonts/roboto-regular.woff') format('woff');
+	unicode-range: var(--letters-latin);
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	src:
+		local('Roboto Bold'),
+		local('Roboto-Bold'),
+		url('../../../static/fonts/roboto-bold-cyrillic.woff2') format('woff2'),
+		url('../../../static/fonts/roboto-bold.woff') format('woff');
+	unicode-range: var(--letters-cyrillic);
+}
+
+/* latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	src:
+		local('Roboto Bold'),
+		local('Roboto-Bold'),
+		url('../../../static/fonts/roboto-bold-latin.woff2') format('woff2'),
+		url('../../../static/fonts/roboto-bold.woff') format('woff');
+	unicode-range: var(--letters-latin);
+}

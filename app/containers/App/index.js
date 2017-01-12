@@ -6,41 +6,36 @@
  * contain code that should be seen on all pages. (e.g. navigation bar)
  */
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 
+// import components
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
-const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
-  display: flex;
-  min-height: 100%;
-  padding: 0 16px;
-  flex-direction: column;
-`;
+// import styles
+import styles from './style.css';
 
-function App(props) {
-  return (
-    <AppWrapper>
-      <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
-        meta={[
-          { name: 'description', content: 'A React.js Boilerplate application' },
-        ]}
-      />
-      <Header />
-      {React.Children.toArray(props.children)}
-      <Footer />
-    </AppWrapper>
-  );
+
+export default class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
+
+  static propTypes = {
+    children: PropTypes.node,
+  }
+
+  render() {
+    return (
+      <main className={styles.app}>
+        <Helmet
+          title="App"
+          meta={[
+            { name: 'description', content: 'Description of App' },
+          ]}
+        />
+        <Header />
+        {React.Children.toArray(this.props.children)}
+        <Footer />
+      </main>
+    );
+  }
 }
-
-App.propTypes = {
-  children: React.PropTypes.node,
-};
-
-export default App;
